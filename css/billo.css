@@ -1,0 +1,277 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800 !important;
+}
+
+a {
+    text-decoration: none;
+    transition: all .4s ease !important;
+    font-weight: 700;
+}
+
+:root {
+    --main-gradiant: linear-gradient(to left, #1107fe, #00e0fe);
+    --main-padding: 80px
+}
+
+/* Start Component  */
+.main-heading .divider {
+    width: 70px;
+    height: 4px;
+    background: var(--main-gradiant);
+    margin: 16px auto;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* End Component  */
+
+/* Start NavBar */
+
+
+.navbar {
+    box-shadow: 0 12px 20px rgb(0 0 0 / 10%);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    background: -webkit-linear-gradient(#1107fe, #00e0fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid #00e0fe;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* End NavBar */
+/* Start Landing  */
+.landing {
+    min-height: calc(100vh);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: var(--main-padding) 0;
+    z-index: 2;
+    position: relative;
+    background-position: center;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
+
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn {
+    background: var(--main-gradiant);
+    padding: .9rem 1.45rem;
+    border: none;
+    font-weight: 600;
+}
+
+section {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    z-index: 2;
+    position: relative;
+}
+
+/* End Landing  */
+/* Start Services */
+.services .icon {
+    position: relative;
+    background: var(--main-gradiant);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto -60px;
+    top: -45px;
+}
+
+.services .icon svg {
+    font-size: 45px;
+    color: white;
+}
+
+/* End Services */
+/* Start Our Video  */
+.our-video {
+    position: relative;
+    z-index: 2;
+}
+
+.our-video .icon {
+    width: 60px;
+    height: 60px;
+    background: var(--main-gradiant);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.our-video .icon svg {
+    transition: .5s;
+}
+
+.our-video .icon:hover svg {
+    color: #04008680;
+}
+
+/* End Our Video  */
+
+/* Start About us */
+.icon {
+    font-size: 45px;
+
+}
+
+.one {
+    transition-delay: .4s;
+}
+
+.two {
+    transition-delay: .6s;
+}
+
+.three {
+    transition-delay: .8s;
+}
+
+.four {
+    transition-delay: 1s;
+}
+
+.five {
+    transition-delay: 1.2s;
+}
+
+.six {
+    transition-delay: 1.4s;
+}
+
+
+
+.about-us .icon svg {
+    color: #02006e;
+}
+
+
+/* End About us */
+/* Start Stats */
+.stats {
+    position: relative;
+    z-index: 2;
+}
+
+/* End Stats */
+/* Start Testimonials */
+.testimonial .box {
+    box-shadow: 0 12px 12px rgb(0 0 0 / 10%);
+    margin-bottom: 1rem !important;
+}
+
+.testimonial .box img {
+    max-width: 90%;
+}
+
+.testimonial .box ul li {
+    font-size: 14px;
+    color: orange;
+}
+
+/* End Testimonials */
+/* Start Blog */
+.blog .card {
+    border: none;
+}
+
+.blog .card .card-body {
+    padding: 0
+}
+
+.blog .card .card-body a {
+    transition: .3s;
+}
+
+.blog .card .card-body .smaller-font {
+    font-size: 15px !important;
+}
+
+.blog .card .card-body a:hover {
+    color: #0a58ca !important;
+}
+
+/* End Blog */
+/* Start Contact */
+.contact input::placeholder,
+.contact input,
+.contact textarea,
+.contact input:focus:not([type="submit"]),
+.contact textarea:focus,
+.contact textarea::placeholder {
+    color: #ffffffea;
+}
+
+.contact input:not([type="submit"]),
+.contact textarea {
+    border: 1px solid #ffffff7c;
+    border-radius: 0;
+}
+
+.contact input:focus:not([type="submit"]),
+.contact textarea:focus {
+    border-color: #ffffff;
+}
+
+.contact input[type="submit"] {
+    transition: .3s;
+}
+
+.contact input[type="submit"]:hover {
+    transform: translateY(-5px);
+}
+
+/* End Contact */
+/* Start Footer  */
+footer {
+    background-image: var(--main-gradiant);
+}
+
+footer ul li a {
+    font-size: 15px;
+    transition: .2s;
+}
+
+footer ul li a:hover {
+    opacity: .3;
+}
+
+/* End Footer  */
